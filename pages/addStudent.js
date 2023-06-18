@@ -36,10 +36,16 @@ const AddStudent = () => {
 
     if (res == 201) {
       alert("Registration successful");
-      router.push("/dashboard");
+      setName("");
+      setIcNo("");
+      setMatric("");
+      // router.push("/dashboard");
     } else {
-      console.log(res);
+      // console.log(res);
       alert("No matric has been used");
+      setName("");
+      setIcNo("");
+      setMatric("");
     }
   };
 
