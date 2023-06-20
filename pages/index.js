@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-import instance from "./api/instance";
+import instance from "../lib/instance";
 import handleLocalStorage from "../utils/handleLocalStorage";
 
 import Input from "../components/Input";
