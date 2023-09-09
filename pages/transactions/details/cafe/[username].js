@@ -106,10 +106,11 @@ const CafeTransaction = () => {
               <option value="month">Month</option>
             </select>
             <Link
-              href={`/transactions/pdf/${username}?from=${date[0]}&to=${date[1]}`}>
-              <a target="_blank" rel="noopener noreferrer">
-                <Button>Print</Button>
-              </a>
+              href={`/transactions/pdf/${username}?from=${date[0]}&to=${date[1]}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              legacyBehavior>
+              <Button>Print</Button>
             </Link>
           </div>
           <div className="flex gap-2">
