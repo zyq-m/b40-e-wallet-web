@@ -149,10 +149,13 @@ const AllCafe = () => {
               <option value="month">Month</option>
               <option value="custom">Custom</option>
             </select>
-            <Link href={`/transactions/pdf/cafe/${target}`}>
-              <a target="_blank" rel="noopener noreferrer">
-                <Button>Print</Button>
-              </a>
+            <Link
+              href={`/transactions/pdf/cafe/${target}`}
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <Button>Print</Button>
+
             </Link>
           </div>
           <div className="flex gap-2">
